@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+	  function show(id_name) {
+	    if (document.getElementById(id_name).style.display == "none") {
+		  document.getElementById(id_name).style.display = "block";
+		}
+		else{
+		  document.getElementById(id_name).style.display = "none";
+		}
+      }
+	</script>
+  </head>
+  <body>
+    <h1>Ko</h1>
+    <p>Den danske malkeko stammer fra uroksen.</p>
+    <img src="open.bmp"><h3>Den hedder Maren</h3>
+    <p>Her står der en masse mere tekst om Maren. Hun har lige fået en kalv og giver ca 21 liter mælk om dagen.</p>
+    <img src="open.bmp"><h3>Hvad spiser den?</h3>
+    <p>Her står der en noget tekst om koens fordøjelse. Hun har fire maver og laver kokasser.</p>
+    <img src="open.bmp"><h3 onclick="show('brug');">Hvad bruges det til?</h3>
+	<div id="brug" style="display: none">
+    <p>Her kommer der noget mere tekst om anvendelse af produkter fra koen. Det kan både være om kød og skind, men også gødning osv.</p>
+      <ul>
+        <li>Udskæringer</li>
+        <li>Læder</li>
+        <li>Dyremad</li>
+      </ul>
+	</div>
+    <img src="open.bmp"><h3 onclick="show('mere');">Mere information</h3>
+	<div id="mere" style="display: none">
+      <p>Her kommer der noget mere tekst, men primært om biologi og evt. historisk betydning.</p>
+      <ul>
+        <li>Drægtighed</li>
+        <li>Antal unger</li>
+        <li>Størrelse</li>
+        <li>Udbredelse</li>
+        <li>Sygdomme</li>
+      </ul>
+	</div>
+  </body>
+</html>
